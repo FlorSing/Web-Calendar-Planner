@@ -16,7 +16,7 @@ A sample of the application's functionalilty is shown below:
 
 The GitHub repository for this project can be found in:
 
-https://github.com/FlorSing/Web-Calendar-Planner-
+https://github.com/FlorSing/Web-Calendar-Planner
 
 
 The link to the publication of the application's deployment is below:
