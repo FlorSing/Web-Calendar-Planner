@@ -5,7 +5,7 @@ var datetime = null,
 
 var update = function () {
     date = moment(new Date())
-    datetime.html(date.format('dddd, MMMM Do YYYY, h:mm:ss a'));
+    datetime.html(date.format('dddd, Do MMMM YYYY, hh a'));
 };
 
 $(document).ready(function(){
@@ -14,8 +14,33 @@ $(document).ready(function(){
     setInterval(update, 1000);
 });
 
+//determine time blocks for past present future
 
 
+
+var containerList = $(".container");
+var timeCurrent = moment().format('hh a')
+var timeSlot = moment().format('hh a');
+listEntry09 = $("<li>").addClass('row time-block hour').text(timeSlot).appendTo(containerList);
+listEntry10 = $("<li>").addClass('row time-block hour').text(timeSlot).appendTo(containerList);
+listEntry11 = $("<li>").addClass('row time-block hour').text(timeSlot).appendTo(containerList);
+listEntry12 = $("<li>").addClass('row time-block hour').text(timeSlot).appendTo(containerList);
+listEntry01 = $("<li>").addClass('row time-block hour').text(timeSlot).appendTo(containerList);
+listEntry02 = $("<li>").addClass('row time-block hour').text(timeSlot).appendTo(containerList);
+listEntry03 = $("<li>").addClass('row time-block hour').text(timeSlot).appendTo(containerList);
+listEntry04 = $("<li>").addClass('row time-block hour').text(timeSlot).appendTo(containerList);
+listEntry05 = $("<li>").addClass('row time-block hour').text(timeSlot).appendTo(containerList);
+
+
+
+
+
+listEntry1.addClass('row time-block hour');
+listEntry2.addClass('row time-block hour');
+$(listEntry1).text('testing');
+$(listEntry2).text('testing2');
+listEntry1.appendTo(containerList);
+listEntry2.appendTo(containerList);
 
 
 // var formEl = $('#skills-form');
