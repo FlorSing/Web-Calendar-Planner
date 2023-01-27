@@ -1,4 +1,4 @@
-# Web-Calendar-Planner-
+# Web-Calendar-Planner
 A simple web-based calendar application
 
 Hi.
