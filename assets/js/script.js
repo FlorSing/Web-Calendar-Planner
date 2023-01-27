@@ -42,20 +42,21 @@ listEntry03 = $("<li>").addClass('row time-block hour').text(timeSlot03).appendT
 listEntry04 = $("<li>").addClass('row time-block hour').text(timeSlot04).appendTo(containerList);
 listEntry05 = $("<li>").addClass('row time-block hour').text(timeSlot05).appendTo(containerList);
 
-if (timeCurrent > timeSlot09){
-    listEntry09.addClass('.past');
-    console.log('white');}
-else if (timeCurrent === timeSlot09){
-    listEntry09.addClass('.future');
-    console.log('green');}
- else {listEntry09.addClass('.present');
-    console.log('red');}
-;
-var textArea = $('<textarea>');
-textArea.addClass('textarea').appendTo(listEntry09);
+var textArea09 = $('<textarea>');
+textArea09.addClass('textarea').appendTo(listEntry09);
 
 var saveTask = $('<button>');
 saveTask.addClass('saveBtn').appendTo(listEntry09);
+if (timeCurrent > timeSlot09){
+    textArea09.addClass('past');}
+   // console.log('white');}
+else if (timeCurrent === timeSlot09){
+    textArea09.addClass('future');}
+   // console.log('green');}
+ else {textArea09.addClass('present')};
+   // console.log('red');}
+;
+
 
  
 // textArea.text(enterTask)
