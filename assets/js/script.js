@@ -44,19 +44,102 @@ listEntry05 = $("<li>").addClass('row time-block hour').text(timeSlot05).appendT
 
 var textArea09 = $('<textarea>');
 textArea09.addClass('textarea').appendTo(listEntry09);
-
-var saveTask = $('<button>');
-saveTask.addClass('saveBtn').appendTo(listEntry09);
 if (timeCurrent > timeSlot09){
     textArea09.addClass('past');}
-   // console.log('white');}
 else if (timeCurrent === timeSlot09){
     textArea09.addClass('future');}
-   // console.log('green');}
  else {textArea09.addClass('present')};
-   // console.log('red');}
 ;
+var saveTask09 = $('<button>');
+saveTask09.addClass('saveBtn').appendTo(listEntry09);
 
+var textArea10 = $('<textarea>');
+textArea10.addClass('textarea').appendTo(listEntry10);
+if (timeCurrent > timeSlot10){
+    textArea10.addClass('past');}
+else if (timeCurrent === timeSlot10){
+    textArea10.addClass('future');}
+ else {textArea10.addClass('present')};
+;
+var saveTask10 = $('<button>');
+saveTask10.addClass('saveBtn').appendTo(listEntry10);
+
+var textArea11 = $('<textarea>');
+textArea11.addClass('textarea').appendTo(listEntry11);
+if (timeCurrent > timeSlot11){
+    textArea11.addClass('past');}
+else if (timeCurrent === timeSlot11){
+    textArea11.addClass('future');}
+ else {textArea11.addClass('present')};
+;
+var saveTask11 = $('<button>');
+saveTask11.addClass('saveBtn').appendTo(listEntry11);
+
+var textArea12 = $('<textarea>');
+textArea12.addClass('textarea').appendTo(listEntry12);
+if (timeCurrent > timeSlot12){
+    textArea12.addClass('past');}
+else if (timeCurrent === timeSlot12){
+    textArea12.addClass('future');}
+ else {textArea12.addClass('present')};
+;
+var saveTask12 = $('<button>');
+saveTask12.addClass('saveBtn').appendTo(listEntry12);
+
+var textArea01 = $('<textarea>');
+textArea01.addClass('textarea').appendTo(listEntry01);
+if (timeCurrent > timeSlot01){
+    textArea01.addClass('past');}
+else if (timeCurrent === timeSlot01){
+    textArea11.addClass('future');}
+ else {textArea01.addClass('present')};
+;
+var saveTask01 = $('<button>');
+saveTask01.addClass('saveBtn').appendTo(listEntry01);
+
+var textArea02 = $('<textarea>');
+textArea02.addClass('textarea').appendTo(listEntry02);
+if (timeCurrent > timeSlot02){
+    textArea02.addClass('past');}
+else if (timeCurrent === timeSlot02){
+    textArea02.addClass('future');}
+ else {textArea02.addClass('present')};
+;
+var saveTask02 = $('<button>');
+saveTask02.addClass('saveBtn').appendTo(listEntry02);
+
+var textArea03 = $('<textarea>');
+textArea03.addClass('textarea').appendTo(listEntry03);
+if (timeCurrent > timeSlot03){
+    textArea03.addClass('past');}
+else if (timeCurrent === timeSlot03){
+    textArea03.addClass('future');}
+ else {textArea03.addClass('present')};
+;
+var saveTask03 = $('<button>');
+saveTask03.addClass('saveBtn').appendTo(listEntry03);
+
+var textArea04 = $('<textarea>');
+textArea04.addClass('textarea').appendTo(listEntry04);
+if (timeCurrent > timeSlot04){
+    textArea04.addClass('past');}
+else if (timeCurrent === timeSlot04){
+    textArea04.addClass('future');}
+ else {textArea04.addClass('present')};
+;
+var saveTask04 = $('<button>');
+saveTask04.addClass('saveBtn').appendTo(listEntry04);
+
+var textArea05 = $('<textarea>');
+textArea05.addClass('textarea').appendTo(listEntry05);
+if (timeCurrent > timeSlot05){
+    textArea05.addClass('past');}
+else if (timeCurrent === timeSlot05){
+    textArea05.addClass('future');}
+ else {textArea05.addClass('present')};
+;
+var saveTask05 = $('<button>');
+saveTask05.addClass('saveBtn').appendTo(listEntry05);
 
  
 // textArea.text(enterTask)
