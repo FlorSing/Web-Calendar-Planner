@@ -21,7 +21,7 @@ https://github.com/FlorSing/Web-Calendar-Planner
 
 The link to the publication of the application's deployment is below:
 
-
+https://florsing.github.io/Web-Calendar-Planner/
 
 
 Thank you.
