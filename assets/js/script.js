@@ -17,5 +17,8 @@ $(document).ready(function(){
     setInterval(update, 1000);
 });
 
-//determine time blocks for past present future and setup scheduler
+//determine time blocks for past present future 
+
+var hour09 = $("#09");
+var textArea = $('<textarea>').addClass('textarea').text('testing').appendTo(hour09);
 

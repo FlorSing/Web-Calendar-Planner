@@ -53,7 +53,7 @@ listEntry03 = $("<li>").addClass('row time-block hour').text(timeSlot03).appendT
 listEntry04 = $("<li>").addClass('row time-block hour').text(timeSlot04).appendTo(containerList);
 listEntry05 = $("<li>").addClass('row time-block hour').text(timeSlot05).appendTo(containerList);
 
-var textArea09 = $('<textarea>').addClass('textarea').appendTo(listEntry09);
+var textArea09 = $('<textarea>').addClass('textarea').appendTo(listEntry09).text('testing');
 var textArea10 = $('<textarea>').addClass('textarea').appendTo(listEntry10);
 var textArea11 = $('<textarea>').addClass('textarea').appendTo(listEntry11);
 var textArea12 = $('<textarea>').addClass('textarea').appendTo(listEntry12);
