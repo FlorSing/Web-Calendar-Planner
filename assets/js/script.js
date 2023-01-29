@@ -20,5 +20,8 @@ $(document).ready(function(){
 //determine time blocks for past present future 
 
 var hour09 = $("#09");
-var textArea = $('<textarea>').addClass('textarea').text('testing').appendTo(hour09);
+textArea09 = $('<textarea>').addClass('textarea').appendTo(hour09);
 
+// var storeText09 = localStorage.setItem('textArea09', textArea09.val());
+// hour09.text(localStorage.getItem('textArea09'));
+// console.log(textArea09.val());
