@@ -20,8 +20,19 @@ $(document).ready(function(){
 //determine time blocks for past present future and setup scheduler
 
 var containerList = $(".container");
-var timeCurrent = moment().format('hh a')
+var timeCurrent = moment()
 var timeSlot = moment().format('hh a');
+
+time09 = moment(moment().hour('09'));
+time10 = moment(moment().hour('10'));
+time11 = moment(moment().hour('11'));
+time12 = moment(moment().hour('12'));
+time13 = moment(moment().hour('13'));
+time14 = moment(moment().hour('14'));
+time15 = moment(moment().hour('15'));
+time16 = moment(moment().hour('16'));
+time17 = moment(moment().hour('17'));
+
 var timeSlot09 = moment().hour('09').format('hh a');
 var timeSlot10 = moment().hour('10').format('hh a');
 var timeSlot11 = moment().hour('11').format('hh a');
@@ -42,195 +53,85 @@ listEntry03 = $("<li>").addClass('row time-block hour').text(timeSlot03).appendT
 listEntry04 = $("<li>").addClass('row time-block hour').text(timeSlot04).appendTo(containerList);
 listEntry05 = $("<li>").addClass('row time-block hour').text(timeSlot05).appendTo(containerList);
 
-var textArea09 = $('<textarea>');
-textArea09.addClass('textarea').appendTo(listEntry09);
-if (timeCurrent > timeSlot09){
-    textArea09.addClass('past');}
-else if (timeCurrent === timeSlot09){
-    textArea09.addClass('future');}
- else {textArea09.addClass('present')};
-;
-var saveTask09 = $('<button>');
-saveTask09.addClass('saveBtn').appendTo(listEntry09);
+var textArea09 = $('<textarea>').addClass('textarea').appendTo(listEntry09);
+var textArea10 = $('<textarea>').addClass('textarea').appendTo(listEntry10);
+var textArea11 = $('<textarea>').addClass('textarea').appendTo(listEntry11);
+var textArea12 = $('<textarea>').addClass('textarea').appendTo(listEntry12);
+var textArea01 = $('<textarea>').addClass('textarea').appendTo(listEntry01);
+var textArea02 = $('<textarea>').addClass('textarea').appendTo(listEntry02);
+var textArea03 = $('<textarea>').addClass('textarea').appendTo(listEntry03);
+var textArea04 = $('<textarea>').addClass('textarea').appendTo(listEntry04);
+var textArea05 = $('<textarea>').addClass('textarea').appendTo(listEntry05);
 
-var textArea10 = $('<textarea>');
-textArea10.addClass('textarea').appendTo(listEntry10);
+
+if (timeCurrent > time09){
+    console.log('past')
+    textArea09.addClass('past');}
+else if (timeCurrent === time09){
+    console.log('future')
+    textArea09.addClass('future');}
+else {console.log('present')
+    textArea09.addClass('present')};
+
 if (timeCurrent > timeSlot10){
     textArea10.addClass('past');}
 else if (timeCurrent === timeSlot10){
     textArea10.addClass('future');}
- else {textArea10.addClass('present')};
-;
-var saveTask10 = $('<button>');
-saveTask10.addClass('saveBtn').appendTo(listEntry10);
+else {textArea10.addClass('present')};
 
-var textArea11 = $('<textarea>');
-textArea11.addClass('textarea').appendTo(listEntry11);
 if (timeCurrent > timeSlot11){
     textArea11.addClass('past');}
 else if (timeCurrent === timeSlot11){
     textArea11.addClass('future');}
- else {textArea11.addClass('present')};
-;
-var saveTask11 = $('<button>');
-saveTask11.addClass('saveBtn').appendTo(listEntry11);
+else {textArea11.addClass('present')};
 
-var textArea12 = $('<textarea>');
-textArea12.addClass('textarea').appendTo(listEntry12);
 if (timeCurrent > timeSlot12){
     textArea12.addClass('past');}
 else if (timeCurrent === timeSlot12){
     textArea12.addClass('future');}
- else {textArea12.addClass('present')};
-;
-var saveTask12 = $('<button>');
-saveTask12.addClass('saveBtn').appendTo(listEntry12);
+else {textArea12.addClass('present')};
 
-var textArea01 = $('<textarea>');
-textArea01.addClass('textarea').appendTo(listEntry01);
 if (timeCurrent > timeSlot01){
     textArea01.addClass('past');}
 else if (timeCurrent === timeSlot01){
     textArea11.addClass('future');}
- else {textArea01.addClass('present')};
-;
-var saveTask01 = $('<button>');
-saveTask01.addClass('saveBtn').appendTo(listEntry01);
+else {textArea01.addClass('present')};
 
-var textArea02 = $('<textarea>');
-textArea02.addClass('textarea').appendTo(listEntry02);
 if (timeCurrent > timeSlot02){
     textArea02.addClass('past');}
 else if (timeCurrent === timeSlot02){
     textArea02.addClass('future');}
- else {textArea02.addClass('present')};
-;
-var saveTask02 = $('<button>');
-saveTask02.addClass('saveBtn').appendTo(listEntry02);
+else {textArea02.addClass('present')};
 
-var textArea03 = $('<textarea>');
-textArea03.addClass('textarea').appendTo(listEntry03);
 if (timeCurrent > timeSlot03){
     textArea03.addClass('past');}
 else if (timeCurrent === timeSlot03){
     textArea03.addClass('future');}
- else {textArea03.addClass('present')};
-;
-var saveTask03 = $('<button>');
-saveTask03.addClass('saveBtn').appendTo(listEntry03);
+else {textArea03.addClass('present')};
 
-var textArea04 = $('<textarea>');
-textArea04.addClass('textarea').appendTo(listEntry04);
 if (timeCurrent > timeSlot04){
     textArea04.addClass('past');}
 else if (timeCurrent === timeSlot04){
     textArea04.addClass('future');}
- else {textArea04.addClass('present')};
-;
-var saveTask04 = $('<button>');
-saveTask04.addClass('saveBtn').appendTo(listEntry04);
+else {textArea04.addClass('present')};
 
-var textArea05 = $('<textarea>');
-textArea05.addClass('textarea').appendTo(listEntry05);
-if (timeCurrent > timeSlot05){
+if (timeCurrent > time17){
+    console.log('past')
     textArea05.addClass('past');}
-else if (timeCurrent === timeSlot05){
+else if (timeCurrent === time17){
+    console.log('future')
     textArea05.addClass('future');}
- else {textArea05.addClass('present')};
-;
-var saveTask05 = $('<button>');
-saveTask05.addClass('saveBtn').appendTo(listEntry05);
-
- 
-// textArea.text(enterTask)
+else {console.log('present')
+    textArea05.addClass('present')};
 
 
-// <script>
-//     var allInputs = $( ":input" );
-//     var formChildren = $( "form > *" );
-//     $( "#messages" ).text( "Found " + allInputs.length + " inputs and the form has " +
-//       formChildren.length + " children." );
-     
-//     $( "form" ).submit(function( event ) {
-//       event.preventDefault();
-//     });
-//     </script>
-    
-
-    
-// var formEl = $('#skills-form');
-// var nameInputEl = $('#skill-name');
-// var dateInputEl = $('#datepicker');
-// var skillsListEl = $('#skills-list');
-
-// var printSkills = function (name, date) {
-//   var listEl = $('<li>');
-//   var listDetail = name.concat(' on ', date);
-//   listEl.addClass('list-group-item').text(listDetail);
-//   listEl.appendTo(skillsListEl);
-// };
-
-// var handleFormSubmit = function (event) {
-//   event.preventDefault();
-
-//   var nameInput = nameInputEl.val();
-//   var dateInput = dateInputEl.val();
-
-//   if (!nameInput || !dateInput) {
-//     console.log('You need to fill out the form!');
-//     return;
-//   }
-
-//   printSkills(nameInput, dateInput);
-
-//   // resets form
-//   nameInputEl.val('');
-//   dateInputEl.val('');
-// };
-
-// formEl.on('submit', handleFormSubmit);
-
-// // Autocomplete widget
-// $(function () {
-//   var skillNames = [
-//     'Bootstrap',
-//     'C',
-//     'C++',
-//     'CSS',
-//     'Express.js',
-//     'Git',
-//     'HTML',
-//     'Java',
-//     'JavaScript',
-//     'jQuery',
-//     'JSON',
-//     'MySQL',
-//     'Node.js',
-//     'NoSQL',
-//     'PHP',
-//     'Python',
-//     'React',
-//     'Ruby',
-//   ];
-//   $('#skill-name').autocomplete({
-//     source: skillNames,
-//   });
-// });
-
-// // Datepicker widget
-// $(function () {
-//   $('#datepicker').datepicker({
-//     changeMonth: true,
-//     changeYear: true,
-//   });
-// });
-
-// // Sortable interaction
-// $(function () {
-//   $('#skills-list').sortable({
-//     placeholder: 'ui-state-highlight',
-//   });
-//   $('#skills-list').disableSelection();
-// });
-
+var saveTask09 = $('<button>').addClass('saveBtn').appendTo(listEntry09);
+var saveTask10 = $('<button>').addClass('saveBtn').appendTo(listEntry10);
+var saveTask11 = $('<button>').addClass('saveBtn').appendTo(listEntry11);
+var saveTask12 = $('<button>').addClass('saveBtn').appendTo(listEntry12);
+var saveTask01 = $('<button>').addClass('saveBtn').appendTo(listEntry01);
+var saveTask02 = $('<button>').addClass('saveBtn').appendTo(listEntry02);
+var saveTask03 = $('<button>').addClass('saveBtn').appendTo(listEntry03);
+var saveTask04 = $('<button>').addClass('saveBtn').appendTo(listEntry04);
+var saveTask05 = $('<button>').addClass('saveBtn').appendTo(listEntry05);
 
