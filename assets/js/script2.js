@@ -8,7 +8,7 @@ var datetime = null,
 
 var update = function () {
     date = moment(new Date())
-    datetime.html(date.format('dddd, Do MMMM YYYY, hh a'));
+    datetime.html(date.format('dddd, Do MMMM YYYY'));
 };
 
 $(document).ready(function(){

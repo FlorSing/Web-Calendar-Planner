@@ -1,6 +1,6 @@
 //top header date and time
 
-$('#currentDay').addClass('lead').text("Today's date and current time is:");
+$('#currentDay').text("Today's date is:");
 
 //display the actual running time on top
 var datetime = null,
@@ -8,7 +8,7 @@ var datetime = null,
 
 var update = function () {
     date = moment(new Date())
-    datetime.html(date.format('dddd, Do MMMM YYYY, hh a'));
+    datetime.html(date.format('dddd, Do MMMM YYYY'));
 };
 
 $(document).ready(function(){
@@ -30,7 +30,12 @@ var time15 = moment(15, "HH");
 var time16 = moment(16, "HH");   
 var time17 = moment(17, "HH");   
 
-console.log(time12);
+console.log(time14);
+console.log(timeCurrent);
+console.log(time14 < timeCurrent);
+console.log(moment(13, "HH").fromNow());
+console.log(moment(14, "HH").fromNow());
+console.log(moment(18, "HH").fromNow());
 
 
 var hour09 = $("#09");
@@ -45,63 +50,62 @@ var hour17 = $("#17");
 
 if (timeCurrent > time09){
     hour09.addClass('past');}
-else if (timeCurrent === time09){
+else if (timeCurrent == time09){
     hour09.addClass('present');}
 else {hour09.addClass('future')};
 
 if (timeCurrent > time10){
     hour10.addClass('past');}
-else if (timeCurrent === time10){
+else if (timeCurrent == time10){
     hour10.addClass('present');}
 else {hour10.addClass('future')};
 
 if (timeCurrent > time11){
     hour11.addClass('past');}
-else if (timeCurrent === time11){
+else if (timeCurrent == time11){
     hour11.addClass('present');}
 else {hour11.addClass('future')};
 
 if (timeCurrent > time12){
     hour12.addClass('past');}
-else if (timeCurrent === time12){
+else if (timeCurrent == time12){
     hour12.addClass('present');}
 else {hour12.addClass('future')};
 
 if (timeCurrent > time13){
     hour13.addClass('past');}
-else if (timeCurrent === time13){
+else if (timeCurrent == time13){
     hour13.addClass('present');}
 else {hour13.addClass('future')};
 
 if (timeCurrent > time14){
     hour14.addClass('past');}
-else if (timeCurrent === time14){
+else if (timeCurrent == time14){
     hour14.addClass('present');}
 else {hour14.addClass('future')};
 
 if (timeCurrent > time15){
     hour15.addClass('past');}
-else if (timeCurrent === time15){
+else if (timeCurrent == time15){
     hour15.addClass('present');}
 else {hour15.addClass('future')};
 
 if (timeCurrent > time16){
     hour16.addClass('past');}
-else if (timeCurrent === time16){
+else if (timeCurrent == time16){
     hour16.addClass('present');}
 else {hour16.addClass('future')};
 
 if (timeCurrent > time17){
     hour17.addClass('past');}
-else if (timeCurrent === time17){
+else if (timeCurrent == time17){
     hour17.addClass('present');}
 else {hour17.addClass('future')};
 
-textArea09 = $('<textarea>').addClass('textarea').appendTo(hour09);
 
-var storeText09 = localStorage.setItem('textArea09', textArea09.val());
-var readText09 = localStorage.getItem('textArea09');
-hour09.text(readText09);
-console.log(textArea09.val());
-
-
+function getTextValue(){
+    textArea09 = $('#09').val();
+    localStorage.setItem('textArea09', textArea09);}
+readTextArea09 = localStorage.getItem('textArea09');
+console.log(readTextArea09);
+$("#09").text(readTextArea09);
