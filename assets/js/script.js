@@ -95,8 +95,7 @@ else if (time17.isSame(moment(), 'hour')){
 else {hour17.addClass('future')};
 
 
-//save text entry in local storage and print on page schedule   
-
+// to render entries blank on start page and stop showing 'null'
 $("#09").val(' ');
 $("#10").val(' ');
 $("#11").val(' ');
@@ -109,6 +108,8 @@ $("#17").val(' ');
 $("#18").val(' ');
 $("#19").val(' ');
 
+
+//save text entry in local storage and print on page schedule   
 
 function getTextValue09(){
     textArea09 = $('#09').val();
