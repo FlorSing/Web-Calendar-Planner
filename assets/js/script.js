@@ -30,21 +30,6 @@ var time15 = moment(15, "HH");
 var time16 = moment(16, "HH");   
 var time17 = moment(17, "HH");   
 
-console.log(time14);
-console.log(timeCurrent);
-console.log(time14 < timeCurrent);
-console.log(moment(13, "HH").fromNow());
-console.log(moment(14, "HH").fromNow());
-console.log(moment(18, "HH").fromNow());
-
-currentTime = moment().format('HH');
-console.log(currentTime);
-console.log(currentTime == time10);
-
-console.log(time10.isBefore(moment(), 'hour'));
-console.log(time10.isSame(moment(), 'hour'));
-console.log(time10.isAfter(moment(), 'hour'));
-
 var hour09 = $("#09");
 var hour10 = $("#10");
 var hour11 = $("#11");
@@ -109,54 +94,20 @@ else if (time17.isSame(moment(), 'hour')){
     hour17.addClass('present');}
 else {hour17.addClass('future')};
 
-// if (timeCurrent > time10){
-//     hour10.addClass('past');}
-// else if (timeCurrent == time10){
-//     hour10.addClass('present');}
-// else {hour10.addClass('future')};
 
-// if (timeCurrent > time11){
-//     hour11.addClass('past');}
-// else if (timeCurrent == time11){
-//     hour11.addClass('present');}
-// else {hour11.addClass('future')};
+//save text entry in local storage and print on page schedule   
 
-// if (timeCurrent > time12){
-//     hour12.addClass('past');}
-// else if (timeCurrent == time12){
-//     hour12.addClass('present');}
-// else {hour12.addClass('future')};
-
-// if (timeCurrent > time13){
-//     hour13.addClass('past');}
-// else if (timeCurrent == time13){
-//     hour13.addClass('present');}
-// else {hour13.addClass('future')};
-
-// if (timeCurrent > time14){
-//     hour14.addClass('past');}
-// else if (timeCurrent == time14){
-//     hour14.addClass('present');}
-// else {hour14.addClass('future')};
-
-// if (timeCurrent > time15){
-//     hour15.addClass('past');}
-// else if (timeCurrent == time15){
-//     hour15.addClass('present');}
-// else {hour15.addClass('future')};
-
-// if (timeCurrent > time16){
-//     hour16.addClass('past');}
-// else if (timeCurrent == time16){
-//     hour16.addClass('present');}
-// else {hour16.addClass('future')};
-
-// if (timeCurrent > time17){
-//     hour17.addClass('past');}
-// else if (timeCurrent == time17){
-//     hour17.addClass('present');}
-// else {hour17.addClass('future')};
-
+$("#09").val(' ');
+$("#10").val(' ');
+$("#11").val(' ');
+$("#12").val(' ');
+$("#13").val(' ');
+$("#14").val(' ');
+$("#15").val(' ');
+$("#16").val(' ');
+$("#17").val(' ');
+$("#18").val(' ');
+$("#19").val(' ');
 
 
 function getTextValue09(){
@@ -164,49 +115,50 @@ function getTextValue09(){
     localStorage.setItem('textArea09', textArea09);}
 readTextArea09 = localStorage.getItem('textArea09');
 console.log(readTextArea09);
-$("#09").text(readTextArea09);
+$("#09").val(readTextArea09);
+
 
 function getTextValue10(){
     textArea10 = $('#10').val();
     localStorage.setItem('textArea10', textArea10);}
 readTextArea10 = localStorage.getItem('textArea10');
 console.log(readTextArea10);
-$("#10").text(readTextArea10);
+$("#10").val(readTextArea10);
 
 function getTextValue11(){
     textArea11 = $('#11').val();
     localStorage.setItem('textArea11', textArea11);}
 readTextArea11 = localStorage.getItem('textArea11');
 console.log(readTextArea11);
-$("#11").text(readTextArea11);
+$("#11").val(readTextArea11);
 
 function getTextValue12(){
     textArea12 = $('#12').val();
     localStorage.setItem('textArea12', textArea12);}
 readTextArea12 = localStorage.getItem('textArea12');
 console.log(readTextArea12);
-$("#12").text(readTextArea12);
+$("#12").val(readTextArea12);
 
 function getTextValue13(){
     textArea13 = $('#13').val();
     localStorage.setItem('textArea13', textArea13);};
 readTextArea13 = localStorage.getItem('textArea13');
 console.log(readTextArea13);
-$("#13").text(readTextArea13);
+$("#13").val(readTextArea13);
 
 function getTextValue14(){
     textArea14 = $('#14').val();
     localStorage.setItem('textArea14', textArea14);};
 readTextArea14 = localStorage.getItem('textArea14');
 console.log(readTextArea14);
-$("#14").text(readTextArea14);
+$("#14").val(readTextArea14);
 
 function getTextValue15(){
     textArea15 = $('#15').val();
     localStorage.setItem('textArea15', textArea15);};
 readTextArea15 = localStorage.getItem('textArea15');
 console.log(readTextArea15);
-$("#15").text(readTextArea15);
+$("#15").val(readTextArea15);
 
 
 function getTextValue16(){
@@ -214,16 +166,13 @@ function getTextValue16(){
     localStorage.setItem('textArea16', textArea16);};
 readTextArea16 = localStorage.getItem('textArea16');
 console.log(readTextArea16);
-$("#16").text(readTextArea16);
+$("#16").val(readTextArea16);
 
 
 function getTextValue17(){
-    // textArea17 = $('#17');
-    // textArea17.text('text');
-    // console.log(textArea17);
     textArea17 = $('#17').val();
     localStorage.setItem('textArea17', textArea17);};
 readTextArea17 = localStorage.getItem('textArea17');
 console.log(readTextArea17);
-$("#17").text(readTextArea17);
+$("#17").val(readTextArea17);
 
