@@ -5,7 +5,7 @@ Hi.
 
 This is a simple web-based planner which can be used to save and plan events for each hour of the day.
 
-It will display the day's date and time blocks for each standard business hours where an even can be entered and saved.
+It will display the day's date and time blocks for each standard business hours where an event can be entered and saved.
 
 Past, present and future events will be color coded for easy reference.
 
